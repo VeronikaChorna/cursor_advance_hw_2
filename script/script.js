@@ -10,6 +10,8 @@ while (Number.isInteger(numberM) === false) {
     console.log(numberM);
 }
 
+let skipEvenNumbers = confirm("Should to skip even numbers?") ? true : false;
+console.log(skipEvenNumbers);
 
 for (let i = numberN; i <= numberM; i++) { 
     console.log(i);
