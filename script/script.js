@@ -9,26 +9,21 @@ while (Number.isInteger(numberM) === false) {
 }
 
 let skipEvenNumbers = confirm("Should to skip even numbers?") ? true : false;
-console.log(`Should to skip even numbers: ${skipEvenNumbers}`);
+console.log(`Should to skip even numbers: ${skipEvenNumbers}.`);
 
+
+let sum = 0;
 for (let i = numberN; i <= numberM; i++) {
-    
+    if (skipEvenNumbers) {
+        if ((i % 2) != 0){
+        sum += i;
+        }
+    } else {
+        sum += i;
+    }
 }
 
+console.log(`Sum of your numbers = ${sum}.`);
 
-// let sum = 0;
-// if (skipEvenNumbers) {
-//     for (let i = numberN; i <= numberM; i++) { 
-//         if (i % 2){
-//            console.log(i);
-//            sum += i;
-//         }
-//     }
-// } else {
-//     for (let i = numberN; i <= numberM; i++) { 
-//             console.log(i);
-//             sum += i;
-//     }
-// }
-    
-// console.log(sum);
+
+
