@@ -16,9 +16,11 @@ let sum = 0;
 for (let i = numberN; i <= numberM; i++) {
     if (skipEvenNumbers) {
         if ((i % 2) != 0){
+            console.log(i);
         sum += i;
         }
     } else {
+        console.log(i);
         sum += i;
     }
 }
